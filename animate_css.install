@@ -18,7 +18,7 @@ function animate_css_install() {
   $library_exists = file_exists(DRUPAL_ROOT . '/' . $library['css'][0]['data']);
   if (!$library_exists) {
     $download_url = 'https://github.com/daneden/animate.css/archive/master.zip';
-    MessengerInterface::addMessage(t('Animate CSS module requires the animate library. <a href=":anim_link">Download animate library</a> and unzip into /libraries/animate.css.', [':anim_link' => DOWNLOAD_URL]));
+    \Drupal::messenger()->addMessage(t('Animate CSS module requires the animate library. <a href=":anim_link">Download animate library</a> and unzip into /libraries/animate.css.', [':anim_link' => DOWNLOAD_URL]));
   }
 }
 
