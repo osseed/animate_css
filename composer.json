@@ -13,31 +13,10 @@
         "issues": "https://www.drupal.org/project/issues/animate_css",
         "source": "http://cgit.drupalcode.org/animate_css"
     },
-    "repositories": [
-      {
-          "type": "composer",
-          "url": "https://packages.drupal.org/8"
-      },
-      {
-        "type": "package",
-        "package": {
-          "name": "daneden/animate.css",
-          "version": "3.7.2",
-          "type": "drupal-library",
-          "dist": {
-            "url": "https://github.com/daneden/animate.css/archive/3.7.2.zip",
-            "type": "zip"
-          }
-        }
-      }
-    ],
-    "extra": {
-      "installer-paths": {
-        "libraries/{$name}": ["type:drupal-library"]
-      }
-    },
-    "minimum-stability": "dev",
     "require": {
-      "daneden/animate.css": "3.7.2"
-    }
+			"drupal/core": "^8 || ^9",
+			"drupal-shimmy/animate.css": "4.1.1"
+		},
+    "minimum-stability": "dev"
+
 }
